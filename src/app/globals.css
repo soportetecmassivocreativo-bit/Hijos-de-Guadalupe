@@ -1,0 +1,103 @@
+:root {
+  --color-primary: #F5C518; /* Yellow from reference */
+  --color-primary-light: #FFDC5E;
+  --color-primary-dark: #D4A700;
+  --color-background: #FAFAFA;
+  --color-surface: #FFFFFF;
+  --color-text: #333333;
+  --color-text-light: #666666;
+  
+  /* Palette - Superior */
+  --pal-white: #FFFFFF;
+  --pal-rosa-claro: #FF89CD;
+  --pal-verde-oliva: #748E50;
+  --pal-verde-brillante: #00D948;
+  --pal-cian: #00CEFF;
+
+  /* Palette - Inferior */
+  --pal-turquesa: #00FFD8;
+  --pal-naranja: #FF9900;
+  --pal-magenta: #FF00C5;
+  --pal-rojo: #FF0000;
+  --pal-verde-lima: #39FF00;
+  --pal-azul: #0022FF;
+  --pal-fucsia: #FF0099;
+  --pal-rosa-fuerte: #FF0077;
+  
+  --color-accent-1: #FF89CD;
+  --color-accent-2: #00CEFF;
+  --color-accent-3: #00D948;
+  
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 32px;
+  --radius-full: 9999px;
+  
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.05);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,0.12);
+  --shadow-colored: 0 12px 36px rgba(245, 197, 24, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: var(--color-text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: var(--font-heading);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+/* Utilities */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 100px 0;
+  position: relative;
+}
+
+/* Smooth scroll with offset for fixed navbar (120px height) */
+#inicio, #nosotros, #beneficios, #servicios, #espacios, #galeria, #contacto {
+  scroll-margin-top: 125px;
+}
+
+/* Rounded Blobs/Shapes (Inspiration from reference) */
+.blob-bg {
+  position: absolute;
+  z-index: -1;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  background: var(--color-primary-light);
+  opacity: 0.2;
+  filter: blur(40px);
+}
